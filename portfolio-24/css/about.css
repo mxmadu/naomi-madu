@@ -1,0 +1,331 @@
+/* Global styles */
+* {
+    overflow-x: hidden;
+}
+
+:root {
+    --title-font-fam: "Press Start 2P", system-ui;
+    --title-font-weight: 400;
+    --title-font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.menu-header {
+    background-color: #49D2A9;
+    border: solid 4px black;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative; /* Ensure positioning context for absolute children */
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-container img {
+    height: 100%;
+}
+
+.img-container h1 {
+    font-family: var(--title-font-fam);
+    color: #FFA800;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    font-size: 48px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: center;
+    z-index: 10;
+}
+
+.nav-links {
+    display: none; 
+    position: fixed; /* Changed to fixed positioning */
+    top: 21vh; /* Adjust this value as needed */
+    right: 0;
+    width: 50%;
+    background-color: #49D2A9; /* Match the header color */
+    padding: 20px 0;
+    border: solid 4px black; /* Fixed border syntax */
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    opacity: 0; /* Start as invisible */
+    visibility: hidden; /* Prevents interaction when hidden */
+    transform: translateY(-20px); /* Start slightly off-screen for transition effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    z-index: 200; /* Ensure it's on top */
+}
+
+.nav-links.show {
+    display: block; /* Make sure it's displayed */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Slide in from the top */
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    font-family: var(--title-font-fam);
+    color: #FFA800;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00C2FF;
+}
+
+nav a:active {
+    color: white;
+}
+
+/* Styles for the hamburger icon */
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 15%; /* Adjusted top position */
+    right: 5%;
+    width: 40px; /* Increased width for larger touchpoint */
+    height: 40px; /* Increased height for larger touchpoint */
+    cursor: pointer;
+    z-index: 5;
+    background-color: #49D2A9; /* Match the background color of the header */
+    padding: 3px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 5px; /* Increased thickness for better visibility */
+    background-color: #FFA800;
+    margin: 6px 0; /* Adjusted margin for spacing */
+    transition: all 0.3s ease;
+    border-radius: 999px;
+    box-shadow: 0 0 0 2px black; /* Adding black stroke effect around each span */
+}
+
+/* Transformations for the 'X' when active */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* footer{
+    width: 100%;
+} */
+
+footer p{
+    font-family: var(--title-font-fam);
+    color: #FFA800;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+    font-size: 24px;
+    position: absolute;
+    background-color: #49D2A9;
+    border: solid 4px black;
+    padding: 5%;
+    margin: 0;
+    line-height: 1.5em;
+
+    text-align: center;
+}
+
+.main-section{
+    background-color: #DBF5ED;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  
+}
+
+
+.text-box{
+    background-color: #F8F4E8;
+    border: dashed black 3px;
+    width: 70vw;
+    height: auto;
+    margin: 15% auto;
+    /* position: relative; */
+    /* overflow-Y: hidden; */
+ 
+}
+
+.text-box p {
+    font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+    font-size: 24pt;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icon-container{
+    display: flex;
+    position: relative;
+    /* top: 55.8%; */
+    /* right: 15%; */
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    
+}
+
+
+.selfie{
+    width: 55%;
+    transform: translate(20px, 20px);
+
+}
+
+.pen{
+    width: 50%;
+    transform: translate(60px, 55px);
+  
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .img-container h1 {
+        font-size: 60px;
+        position: absolute;
+        left: 10%;
+        top: 60%;
+        padding: 5px;
+    }
+
+    .img-container img {
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    nav a{
+        font-size: 26px;
+    }
+
+    footer p{
+        width: 100vw;
+        padding: 5px;
+    }
+
+    .tablet-spacing{
+        background-color: #DBF5ED;
+        display: flex;
+
+    }
+
+    .selfie{
+        transform: translateY(50px);
+    }
+
+    .pen{
+        transform: translate(130px, 120px);
+    }
+}
+
+
+/* Responsive styles */
+@media only screen and (min-width: 1025px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: block !important; /* Ensure it's displayed */
+    }
+
+    .img-container h1 {
+        font-size: 70px;
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        padding: 5px;
+    }
+
+    .img-container img {
+        position: absolute;
+        left: 0;
+    }
+    .nav-links {
+        display: block; /* Ensure it's displayed */
+        position: absolute;
+        border: none;
+        left: 42%; /* Center the links */
+        top: 15%; /* Adjust this value if needed */
+        /* transform: translateX(-50%); */
+        z-index: 10;
+        background-color: transparent;
+        padding: 0;
+        opacity: 1; /* Ensure it's fully visible */
+        visibility: visible; /* Ensure it's interactive */
+        transition: none; /* Remove transition to prevent glitches */
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-start; /* Align links to the start */
+        gap: 10px; /* Space between links */
+    }
+
+    nav a {
+        padding: 20px 15px;
+        
+    }
+
+    footer p{
+        width: 100vw;
+        padding: 5px;
+    }
+
+    .text-box{
+        width: 90vw;
+        height: auto;
+        /* overflow-y: hidden; */
+        margin: 5% auto;
+        position: static;
+    }
+
+    .icon-container{
+        left: 70%;
+    }
+
+    
+
+    .selfie{
+        width: 15%;
+    }
+
+    .pen{
+        width: 15%;
+        transform: translate(90px, 60px);
+    }
+
+}
+

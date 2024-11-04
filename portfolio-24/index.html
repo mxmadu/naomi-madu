@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Home</title>
+</head>
+<body>
+    
+    <div class="menu-header">
+        <div class="img-container">
+            <img src="img/portfolio-headshot.png" alt="Heavily edited 'comic-style' headshot of Naomi Madu. They are wearing a white shirt, their hair is in red twists, scooped up into a ponytail. They are smiling.">
+            <h1>ASK NAOMI!</h1>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>       
+        </div>
+        <div class="nav-links" id="navLinks">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.html">RESUME</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+    
+    
+
+        <article class="comic">
+            <div class="panel">
+              <img src="./img/lcd-screen.png" class="lcd" alt="Colorized CRT Monitor in neon green, with a magazine spread
+              photoshopped within. The spread is blush pink and features a very small picture of Naomi posing by a rose bush, with text on
+              the other page">
+            </div>
+            <div class="panel">
+              <p>
+                I am a multimedia creative and digital humanities scholar with a passion for storytelling. 
+                I enjoy uncovering narratives that have historically been overlooked and bringing them to 
+                more audiences through new media. But my passion for media is more than just a hobby or a 
+                handful of skills, it has developed into a whole ethos, a hypothesis, <a href="about.html">a journey...</a>
+              </p>
+            </div>
+            <div class="panel">
+                <p>
+                    I received my Bachelor's degree at the University of Kansas in 2022 and followed that up with a Master's degree 
+                    from Trinity College Dublin. Education has also taken me across 
+                    Germany (both physically and figuratively speaking) and through the underbelly of the <a href="projects.html#tlr">city of London...</a>
+                  </p>
+            </div>
+            <div class="panel">
+                <p>
+                    My work experience spans agencies and non-profits giving me the best of both worlds in terms of skill 
+                    acquisition and professional development. I've also gotten to wear multiple hats across different roles, 
+                    from the PR Patrol cap to the <a href="resume.html">Strategist's Stetson...</a>
+                  </p>
+            </div>
+            <a href="contact.html" class="panel" role="img" aria-label="Mock contact card with a green background and esotieric art work
+            like crystal balls and tarot cards. Text reads: Got a question for Naomi? Call now 1-800-MADU">
+
+            </a>
+            <!-- <div class="panel">
+                
+            </div> -->
+            <div class="panel">
+                <p>
+                    What's in a portfolio? A website? A multi-media anthology? Social media graphics? A 3D interactive installation? 
+                    A short film? Essays? I think a portfolio really only needs one thing: <a href="projects.html">vision...</a>
+                  </p>
+            </div>
+            <!-- <div class="panel"></div> -->
+            <div class="panel">
+                <p class="crossword-title">TODAY'S CROSSWORD: NAOMI'S TOP CONVERSATION STARTERS</p>
+             <a href="crossword.html"><img src="./img/crossword.png" alt="An image of a crossword that is playable" class="crossword">
+             <h2>Click to play!</h2></a>
+            </div>
+          </article>
+       <!-- <div class="tablet-spacing">klewngfk</div> -->
+<footer>
+    <p>naomi's portfolio ©<span id="currentYear"></span></p>
+</footer>
+    
+</body>
+<script>
+   function toggleMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
+    // Toggle 'active' class on hamburger icon
+    hamburger.classList.toggle('active');
+    
+    // Toggle the 'show' class on nav-links for displaying the menu
+    navLinks.classList.toggle('show');
+}
+
+// Function to set the current year in the footer
+function updateYear() {
+        const yearSpan = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
+
+    // Call the function to update the year when the page loads
+    window.onload = updateYear;
+</script>
+</html>
