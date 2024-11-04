@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/projects.css">
+    <title>Projects</title>
+</head>
+<body>
+    
+    <div class="menu-header">
+        <div class="img-container">
+            <img src="img/portfolio-headshot.png" alt="Heavily edited 'comic-style' headshot of Naomi Madu. They are wearing a white shirt, their hair is in red twists, scooped up into a ponytail. They are smiling.">
+            <h1>NAOMI'S PROJECTS!</h1>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>       
+        </div>
+        <div class="nav-links" id="navLinks">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.html">RESUME</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+<div class="main-section">
+    <div id="myBtnContainer">
+        <a href="#" class="filter" data-filter-type="type" data-filter="all"><button class="btn active"><img src="./img/showA.png" alt="Magnifying glass and folder icon" class="btn-img">Show all</button></a>
+        <a href="#" class="filter" data-filter-type="type" data-filter="3d"><button class="btn"><img src="./img/3dmodel.png" alt="3D model of sphere and cube in a desktop window icon" class="btn-img">3D Modelling</button></a>
+        <a href="#" class="filter" data-filter-type="type" data-filter="webdev"><button class="btn"><img src="./img/coding.png" alt="Icon of Dekstop windows of command terminal and other pages" class="btn-img">Web Development</button></a>
+         <a href="#" class="filter" data-filter-type="type" data-filter="graphics"><button class="btn"><img src="./img/jaypee.png" alt="I con of a JPEG file which is an image of an eye" class="btn-img">Graphic Design</button></a>
+          <a href="#" class="filter" data-filter-type="type" data-filter="writing"><button class="btn"><img src="./img/notes.png" alt="Notepad icon depicting a pen scribbling onto a pad" class="btn-img">Writing</button></a>
+           <a href="#" class="filter" data-filter-type="type" data-filter="strat-comm"><button class="btn"><img src="./img/tiktok.png" alt="Tik Tok logo icon" class="btn-img">Advertising & PR Work</button></a>
+          <a href="#" class="filter" data-filter-type="type" data-filter="video"><button class="btn"><img src="./img/action.png" alt="Clapperboard icon" class="btn-img">Videography</button></a>
+       
+      </div>
+    <div class="card-container">
+        <div class="filterDiv 3d webdev">
+            <h3 class="project-title">SORRY WE CAN'T CONNECT YOUR CALL</h3>
+            <p class="project-desc">
+                An interactive installation exploring the smartphone as a double-edged sword, 
+                a contemporary site of global connectivity, linking us not just to one another but to social decline and suffering.
+            </p>
+            <img src="./img/swccyc.png" alt="Screenshot of webpage depicting the iPhone model on the webpage" class="project-img">
+            <a href="https://mxmadu.github.io/SWCCYC/index.html"><button class="ext-link">Explore Project</button></a>
+        </div>
+        <div class="filterDiv 3d webdev">
+            <h3 class="project-title">PRETTY HURTS, UGLY KILLS</h3>
+            <p class="project-desc">
+                A 3D interactive installation engaging the audience with desirability politics and how certain features, 
+                non-normative or otherwise, have been villanized in the media throughout history.
+            </p>
+            <img src="./img/phuk.png" alt="Screenshot of webpage depicting the 3D model of the head" class="project-img">
+            <a href="https://mxmadu.github.io/phuk-phace/index.html"><button class="ext-link">Explore Project</button></a>
+        </div>
+        <div class="filterDiv webdev">
+            <h3 class="project-title">WESTLAND SQUARE WEBSITE</h3>
+            <p class="project-desc">
+                A website providing building information for Westland Square, which houses Trinity College Dublin's
+                Interactive Digital Media program, as well as a digital hub for prospective and current students. Click to enlarge!
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 4</div> -->
+                <img src="./img/westland_home.png" alt="The Square homepage" class="project-img enlarge">
+                    </div>
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 4</div> -->
+                <img src="./img/westland_directory.png" alt="The Square building directory" class="project-img enlarge">
+                    </div>
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 4</div> -->
+                <img src="./img/westland_projects.png" alt="The Square projects page" class="project-img enlarge">
+                    </div>
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">4 / 4</div> -->
+                <img src="./img/westland_blog.png" alt="The Square blog page" class="project-img enlarge">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/westland_home.png" alt="The Square homepage">
+                      </div>
+                      <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/westland_directory.png" alt="The Square building directory">
+                      </div>
+                      <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/westland_projects.png" alt="The Square projects page">
+                      </div>
+                      <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/westland_blog.png" alt="The Square blog page">
+                      </div>
+             </div>
+             <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+
+              </div>
+        </div>
+        <div class="filterDiv 3d">
+            <h3 class="project-title">NINTENDO-INSPIRED 'WHERE'S WALDO?'</h3>
+            <p class="project-desc">
+                A 3D room with specialized decor created in Blender for an environment design project. Click to enlarge and see what
+                items you recognize!
+            </p>
+            <img src="./img/3d_room.png" alt="3D bedroom filled with mario and ninetndo-sinpired objects" class="project-img enlarge">
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="./img/3d_room.png" alt="3D bedroom filled with mario and ninetndo-sinpired objects">
+              </div>
+        </div>
+        <div class="filterDiv webdev writing">
+            <h3 class="project-title">BIT_BY_BIT</h3>
+            <p class="project-desc">
+                What if you discovered you were turning into a computer? In this sci-fi mystery, you are the main character and if you play 
+                your cards right, you just might get to the bottom of this and who knows, maybe even alter your fate!
+                 This story was developed using Twine with a combination of html, css and javascript.
+            </p>
+            <img src="./img/bbb.jpeg" alt="Blue-tinted LCD monitor on a red background" class="project-img">
+            <a href="https://mxmadu.github.io/Bit_By_Bit/"><button class="ext-link">Explore Project</button></a>
+        </div>
+        <div class="filterDiv webdev">
+            <h3 class="project-title">HOW DOES IT MAKE YOU MEME?</h3>
+            <p class="project-desc">
+                A web-based image sharing platform dedicated to (my personal love of) meme culture! This isn't Instagram,
+                or Twitter or Tumblr, it's all three combined with about half as much discourse! Click to enlarge!
+            </p>
+            <div class="slideshow-container2">
+                <div class="mySlides2 fade">
+                    <!-- <div class="numbertext">1 / 4</div> -->
+                <img src="./img/hdimym_login.png" alt="How Does It Make You Meme login page" class="project-img enlarge">
+                    </div>
+                <div class="mySlides2 fade">
+                    <!-- <div class="numbertext">2 / 4</div> -->
+                <img src="./img/hdimym_feed.png" alt="How Does It Make You Meme feed" class="project-img enlarge">
+                    </div>
+                <div class="mySlides2 fade">
+                    <!-- <div class="numbertext">3 / 4</div> -->
+                <img src="./img/hdimym_post.png" alt="How Does It Make You Meme post page" class="project-img enlarge">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+                    <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/hdimym_login.png" alt="How Does It Make You Meme login page">
+                      </div>
+                      <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/hdimym_feed.png" alt="How Does It Make You Meme feed">
+                      </div>
+                      <div class="popup-image">
+                        <span>&times;</span>
+                        <img src="./img/hdimym_post.png" alt="How Does It Make You Meme post page">
+                      </div>
+             </div>
+             <div style="text-align:center">
+                <span class="dot2" onclick="currentSlide2(1)"></span>
+                <span class="dot2" onclick="currentSlide2(2)"></span>
+                <span class="dot2" onclick="currentSlide2(3)"></span>
+              </div>
+        </div>
+        <div class="filterDiv webdev graphics">
+            <h3 class="project-title">MOSAIC PHOTO & VIDEO FILTER</h3>
+            <p class="project-desc">
+                A procedurally-generated video filter using Processing (Java) that creates a mosaic with a predetermined array of images.
+                I've applied the filter to the viral video of internet sweetheart Keke Palmer for  Vanity Fair's 'lie detector' series.
+            </p>
+            <video controls class="project-img">
+                <source src="./img/keke.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+        <div class="filterDiv writing">
+            <h3 class="project-title">RACE, REPARATIONS & REMEMBRANCE: 
+                THE LASTING IMPACT OF ANTIBLACKNESS AND SYSTEMIC RACISM IN MODERN GERMAN SOCIETY
+            </h3>
+            <p class="project-desc">
+                An independent study charting antiblack racism in German social hierarchy from pre-unification to present day 
+                (circa 2021). This research was undertaken with the support of an Undergraduate Research Award and later presented
+                virtually.
+            </p>
+            <img src="./img/germanFinal.png" alt="Cover page with title of paper, class code, semester published and supervisor name" class="project-img">
+            <a href="https://drive.google.com/file/d/1VGbpfRWOsR-a2wbtVl9MafrdFdvsyNrZ/view?usp=sharing"><button class="ext-link">Read Paper</button></a>
+        </div>
+        <div class="filterDiv strat-comm writing">
+            <h3 class="project-title">REJECT REGULAR</h3>
+            <p class="project-desc">
+                A highly experiential campaign developed for the 2022 National Student Advertising Competition client, Meta, 
+                positioning the Quest 2 headset as "college essential" - the gateway to keeping 18-24 year olds infinitely 
+                entertained and socially connected. Our research, insights and creative activations as well as an invigorating 
+                final presentation earned us 5th place.
+            </p>
+            <video controls class="project-img">
+                <source src="./img/reject_reg.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <a href="https://b19d4202-9b43-442b-8d85-7653a575b58a.filesusr.com/ugd/6416ad_06102c498e4d445aad49f6c30eb4b3e9.pdf"><button class="ext-link">Read Plansbook</button></a>
+
+        </div>
+        <div class="filterDiv graphics writing">
+            <h3 class="project-title">PASS ME THE MIC</h3>
+            <p class="project-desc">
+                A virtual exhibition adapted from my anthology of the same name. This project is a multi-faceted memorial 
+                to the trials and tribulations of hip-hop as a genre and community and its impact on global media and entertainment.
+            </p>
+            <img src="./img/pmtm.jpg" alt="Pass Me The Mic logo, text depicted on a gray, concreted textured background" class="project-img">
+            <a href="https://passmethemic.myportfolio.com"><button class="ext-link">Explore Project</button></a>
+        </div>
+        <div class="filterDiv strat-comm">
+            <h3 class="project-title">GIVE A SH*T TOOLKIT</h3>
+            <p class="project-desc">
+                A social media campaign developed in collaboration with the University of Kansas Business 
+                School to support the "Protect KU" plan to make the transition back to in-person instruction safer for all members of the community.
+            </p>
+            <img src="./img/giveAShit.png" alt="Give A Sh*t Toolkit logo, illustrations of PPE decpited in a toolbox with covid molecules" class="project-img">
+        </div>
+        <div class="filterDiv webdev">
+            <h3 class="project-title">KANSAS AFRICAN STUDIES CENTER WEBSITE MIGRATION</h3>
+            <p class="project-desc">
+                To help the center comply with University regulations, I worked to migrate the website from a CMS we were pivoting from and helped redesign
+                the website using Drupal, keeping the interface consistent with the institutions's color scehemes, approved templates, etc. Accessibility was heavily 
+                emphasized in the migration, and i was responsible for ensuring all content and file formats met the expectations.
+            </p>
+            <img src="./img/kasc.png" alt="Kansas African Studies Center homepage" class="project-img">
+            <a href="https://kasc.ku.edu"><button class="ext-link">Visit Website</button></a>
+        </div>
+        <div class="filterDiv video writing">
+            <h3 class="project-title">I WAS A STRANGER AND YOU DISREGARDED ME</h3>
+            <p class="project-desc">
+                Instead of writing an essay for my 'Diversity in Media' class, I created a fictional 
+                podcast predicated on breaking down complex issues to provide more context and improve the 
+                media literacy skills of my listeners. Strap in! For my pilot episode we will be discussing 
+                the portrayal of immigrants in the media.
+            </p>
+            <img src="./img/iGoogled.png" alt="Project logo, a mobile lockscreen with a notification reading the project title and a mouse cursor hovering over 'Accept'" class="project-img">
+            <a href="https://www.youtube.com/watch?v=tlw1cuph5JU"><button class="ext-link">Watch Video</button></a>
+        </div>
+        <div class="filterDiv video">
+            <h3 class="project-title">FROM THE TOP (2021)</h3>
+            <p class="project-desc">
+                What do Kansans know about hip-hop? Quite a bit as it turns out. Hip-hop chorepgrapher and professor at the University 
+                of Kansas, Maya Tillman-Rayton, takes us through her journey as a dancer and practitioner while preparing for the 2021 University 
+                Dance Company Showcase: Bodies of Text. Filmed, produced and edited by me for the virtual exhibition: Pass Me The Mic.
+            </p>
+            <img src="./img/pmtm.jpg" alt="Pass Me The Mic logo, text depicted on a gray, concreted textured background" class="project-img">
+            <a href="https://youtu.be/_a54I23KgyU"><button class="ext-link">Watch Film</button></a>
+        </div>
+        <div class="filterDiv writing">
+            <h3 class="project-title">QUEERING THE DIGITAL ARCHIVE</h3>
+            <p class="project-desc">
+                For my master's thesis, I combined technical and theoretical analysis to make the case for newer forms and approaches to 
+                digital archivism in order to protect queer naratives while also restoring agency to the most marginalized within the LGBTQ+ umbrella. For my
+                research, I investigated popular web 2.0 and 3.0 platforms and technologies, higlighting their affordances and shortcomings, ultimately
+                providing a foundation for future research.
+            </p>
+            <img src="./img/thesis.png" alt="Cover page showing the paper title, institution logo and supervisor name" class="project-img">
+            <a href="https://drive.google.com/file/d/1qJcrvNJlrOhjwcyDfV_IReRuhCXByiTD/view?usp=sharing"><button class="ext-link">Read Paper</button></a>
+        </div>
+        <a id="tlr"><div class="filterDiv writing">
+            <h3 class="project-title">THE LONDON REVIEW (2022 EDITION)</h3>
+            <p class="project-desc">
+                I contributed to the University of Kansas Honors annual publication of The London Review, where students
+                elect to study abroad for a cultural immersion and then collectively produce the magazine, filled with essays,
+                stories and artwork reflecting on the experience. You can read one of my essays, "Underneath The Cobblestone Streets" by
+                clicking on the image below, while the button will take you to the full publication.
+            </p>
+            <a href="https://drive.google.com/file/d/16lmADPG1VEc22x40-ekyzn5_GL506ltg/view"><img src="./img/london.png" alt="2022 London Review Cover page, an illustrated chandelier with 4 candels burning" class="project-img"></a>
+            <a href="https://issuu.com/kuenglishabroad/docs/london_review_book_2022_individual_pages_"><button class="ext-link">View Project</button></a>
+            </div>
+        </a>
+    </div>
+    
+    </div>
+</div>
+<footer>
+    <p>naomi's portfolio ©<span id="currentYear"></span></p>
+</footer>
+    
+</body>
+<script>
+   function toggleMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
+    // Toggle 'active' class on hamburger icon
+    hamburger.classList.toggle('active');
+    
+    // Toggle the 'show' class on nav-links for displaying the menu
+    navLinks.classList.toggle('show');
+}
+
+// Function to set the current year in the footer
+function updateYear() {
+        const yearSpan = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
+
+    // Call the function to update the year when the page loads
+    window.onload = updateYear;
+
+    let slideIndex = 1;
+showSlides(slideIndex);
+showSlides2(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+  let dots = document.getElementsByClassName("dot2");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+document.querySelectorAll('.filterDiv img').forEach(image => {
+    image.onclick = () => {
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
+
+document.querySelector('.popup-image span').onclick = () => {
+    document.querySelector('.popup-image').style.display = 'none';
+}
+
+let filters = {
+    type: []
+};
+// Function to show the filtered projects
+function filterSelection(filterType, filter) {
+        var allProjects = document.getElementsByClassName("filterDiv");
+        for (var i = 0; i < allProjects.length; i++) {
+            // If the filter is "all", display everything, else show specific filter
+            if (filter === "all" || allProjects[i].classList.contains(filter)) {
+                allProjects[i].style.display = "block";
+            } else {
+                allProjects[i].style.display = "none";
+            }
+        }
+    }
+
+    // Function to add event listeners to filter buttons
+    function initializeFilters() {
+        var filterButtons = document.getElementsByClassName("filter");
+        for (var i = 0; i < filterButtons.length; i++) {
+            filterButtons[i].addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                var filterType = this.getAttribute("data-filter-type");
+                var filter = this.getAttribute("data-filter");
+
+                // Remove 'active' class from all buttons
+                var activeBtn = document.querySelector('.btn.active');
+                if (activeBtn) {
+                    activeBtn.classList.remove('active');
+                }
+
+                // Add 'active' class to the clicked button
+                this.querySelector('.btn').classList.add('active');
+
+                // Call the filterSelection function
+                filterSelection(filterType, filter);
+            });
+        }
+    }
+
+    // Initialize filter buttons when the page loads
+    window.onload = function () {
+        updateYear(); // Existing function
+        initializeFilters(); // Initialize filtering
+    };
+       
+
+
+</script>
+</html>

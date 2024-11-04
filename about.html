@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
+    <title>About</title>
+</head>
+<body>
+    
+    <div class="menu-header">
+        <div class="img-container">
+            <img src="img/portfolio-headshot.png" alt="Heavily edited 'comic-style' headshot of Naomi Madu. They are wearing a white shirt, their hair is in red twists, scooped up into a ponytail. They are smiling.">
+            <h1>ABOUT NAOMI!</h1>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>       
+        </div>
+        <div class="nav-links" id="navLinks">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="resume.html">RESUME</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+        </div>
+    </div>
+<div class="main-section">
+    <div class="text-box">
+        <p>I'm an interactive digital media designer, I'm an artist and digital humanities scholar. I've created for myself a path that covers a wide range of abilities and perspectives 
+            with the hopes of bringing it all together for collective social reckoning and the development of equitable and sustainable media.
+            <br>
+            <br>
+            I consider emerging media and technology a prime space for democratizing public life, allowing everyone to show up in the ways they deem fitting. 
+            At the same time, it is easily manipulated to intentionally leave some out of the picture, be it through accessibility or misinformation, 
+            and we are racing ahead into a system that is quickly spiraling away from the human-centered goals it originally had.
+            <br>
+            <br>
+            In my scholarship of not only media archaeology but also the affordances of technological infrastructure of both Web 2.0 and Web 3.0 platforms, 
+            I am able to bring the human back into human-centered design, to develop spaces that are not just accessible but welcoming to all.
+            <br>
+            <br>
+            Having started out in the strategy side of public relations and advertising, the hours of research into consumer behavior 
+            led to a greater interest in consumer conditioning and as one who is not immune to the numerous codes and signals embedded in 
+            both traditional and digital media, I felt compelled to investigate further and illuminate these issues with the hopes of improving 
+            the public's media literacy skills. My writings and installations have won me departmental awards, one of which is archived in the Spencer 
+            Museum of Art at the University of Kansas, laying the groundwork for the topics I engaged with more recently in my master's program.
+            <br>
+            <br>
+            Continuing my education in both the technical and critical side of digital media is just the beginning, as I hope to continue to 
+            bring my acquired skills and theoretical insight into human-centered design. I have worked on projects requiring ui/ux principles and 
+            accessibility compliance, interactive narrative development, a c++ variant for sensor technology development and many more. These are 
+            the skills that will make up the backbone of the digital future and I intend to bring them together for the best possible outcome...
+            </p>
+            <br>
+            <!-- <br>
+            <br>
+            <br> -->
+
+            <div class="icon-container">
+                <img src="./img/writing.png" alt="8 bit icon of feather in an ink pot" class="pen">
+                <img src="./img/Subject.png" alt="Selfie of Naomi with beads in their hair. They are smiling at the camera in a white blouse" class="selfie">
+            </div>
+    </div>
+</div>
+<footer>
+    <p>naomi's portfolio ©<span id="currentYear"></span></p>
+</footer>
+    
+</body>
+<script>
+   function toggleMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    
+    // Toggle 'active' class on hamburger icon
+    hamburger.classList.toggle('active');
+    
+    // Toggle the 'show' class on nav-links for displaying the menu
+    navLinks.classList.toggle('show');
+}
+
+// Function to set the current year in the footer
+function updateYear() {
+        const yearSpan = document.getElementById('currentYear');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    }
+
+    // Call the function to update the year when the page loads
+    window.onload = updateYear;
+</script>
+</html>
